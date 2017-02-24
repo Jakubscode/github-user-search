@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 150px;
+  padding: 20px;
+
+  color: white;
+}
+.App-header > div {
+  position: relative;
+}
+.App-header > div > .input {
+  border:3px solid #05A5D1;
+  border-radius:5px;
+  
+  display: block;
+  padding: 10px;
+  outline: none;
+  
+  transition: border-color 0.3s ease-in-out;
+
+  font-size: 1.2rem;
+}
+.App-header > div > .input.invalid {
+  border:3px solid #FF3B30;
+}
+.App-header > div > .errorInfo {
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  left: 0;
+  transform: translateY(200%);
+
+  color:#FF3B30;
+}
+.App-content {
+  font-size: large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
